@@ -106,7 +106,7 @@ export default defineComponent({
         const span = node.props?.span || 1
 
         if (index === children.length - 1) {
-          temp.push(filledNode(node, span, count, true))
+          temp.push(filledNode(node, span, count, rows.length > 0))
           rows.push(temp)
           return
         }
